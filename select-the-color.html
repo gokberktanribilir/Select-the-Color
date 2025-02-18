@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select The Color</title>
+</head>
+<body>
+    <h1>Select The Color</h1>
+    <script>
+
+function Color(n) {
+    switch (true) {
+        case (n < 0 || n > 50):
+            return "Invalid Number";
+        case n <= 10:
+            return "kırmızı";
+        case n <= 20:
+            return "mavi";
+        case n <= 30:
+            return "sarı";
+        case n <= 40:
+            return "yeşil";
+        case n <= 50:
+            return "kahverengi";
+        default:
+            return "Invalid Number"; 
+    }
+}
+
+console.log(Color(15)); // mavi
+console.log(Color(35)); // yeşil
+console.log(Color(-7)); // Invalid Number
+console.log(Color(54)); // Invalid Number
+ 
+    </script>
+</body>
+</html>
