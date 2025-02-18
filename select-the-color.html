@@ -14,9 +14,9 @@ function Color(n) {
         case (n < 0 || n > 50):
             return "Invalid Number";
         case n <= 10:
-            return "kırmızı";
-        case n <= 20:
             return "mavi";
+        case n <= 20:
+            return "kırmızı";
         case n <= 30:
             return "sarı";
         case n <= 40:
@@ -28,7 +28,7 @@ function Color(n) {
     }
 }
 
-console.log(Color(15)); // mavi
+console.log(Color(15)); // kırmızı
 console.log(Color(35)); // yeşil
 console.log(Color(-7)); // Invalid Number
 console.log(Color(54)); // Invalid Number
